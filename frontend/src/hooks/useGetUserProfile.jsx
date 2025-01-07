@@ -10,7 +10,7 @@ const useGetUserProfile = (userId) => {
     useEffect(() => {
         const fetchUserProfile = async () => {
             try {
-                const res = await axios.get(`http://pr1-ctabe6djgpardecr.ukwest-01.azurewebsites.net/api/v1/user/${userId}/profile`, { withCredentials: true });
+                const res = await axios.get(`http://pr-gwhve7cwb3fwdmcu.canadacentral-01.azurewebsites.net/api/v1/user/${userId}/profile`, { withCredentials: true });
                 if (res.data.success) { 
                     dispatch(setUserProfile(res.data.user));
                 }

@@ -24,7 +24,7 @@ const LeftSidebar = () => {
 
     const logoutHandler = async () => {
         try {
-            const res = await axios.get('http://pr1-ctabe6djgpardecr.ukwest-01.azurewebsites.net/api/v1/user/logout', { withCredentials: true });
+            const res = await axios.get('http://pr-gwhve7cwb3fwdmcu.canadacentral-01.azurewebsites.net/api/v1/user/logout', { withCredentials: true });
             if (res.data.success) {
                 dispatch(setAuthUser(null));
                 dispatch(setSelectedPost(null));

@@ -34,7 +34,7 @@ const CommentDialog = ({ open, setOpen }) => {
   const sendMessageHandler = async () => {
 
     try {
-      const res = await axios.post(`http://pr1-ctabe6djgpardecr.ukwest-01.azurewebsites.net/api/v1/post/${selectedPost?._id}/comment`, { text }, {
+      const res = await axios.post(`http://pr-gwhve7cwb3fwdmcu.canadacentral-01.azurewebsites.net/api/v1/post/${selectedPost?._id}/comment`, { text }, {
         headers: {
           'Content-Type': 'application/json'
         },

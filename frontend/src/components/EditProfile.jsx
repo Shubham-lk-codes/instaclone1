@@ -40,7 +40,7 @@ const EditProfile = () => {
         }
         try {
             setLoading(true);
-            const res = await axios.post('http://pr1-ctabe6djgpardecr.ukwest-01.azurewebsites.net/api/v1/user/profile/edit', formData, {
+            const res = await axios.post('http://pr-gwhve7cwb3fwdmcu.canadacentral-01.azurewebsites.net/api/v1/user/profile/edit', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 },

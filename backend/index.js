@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(urlencoded({ extended: true }));
 const corsOptions = {
-    origin: 'http://mern-azure-web-h4ashbdzdtg0amhr.eastus-01.azurewebsites.net', // Match protocol
+    origin: 'http://pr-gwhve7cwb3fwdmcu.canadacentral-01.azurewebsites.net', // Match protocol
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 };

@@ -10,7 +10,7 @@ const useGetAllMessage = () => {
     useEffect(() => {
         const fetchAllMessage = async () => {
             try {
-                const res = await axios.get(`http://pr1-ctabe6djgpardecr.ukwest-01.azurewebsites.net/api/v1/message/all/${selectedUser?._id}`, { withCredentials: true });
+                const res = await axios.get(`http://pr-gwhve7cwb3fwdmcu.canadacentral-01.azurewebsites.net/api/v1/message/all/${selectedUser?._id}`, { withCredentials: true });
                 if (res.data.success) {  
                     dispatch(setMessages(res.data.messages));
                 }

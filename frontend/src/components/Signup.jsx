@@ -25,7 +25,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            const res = await axios.post('http://pr1-ctabe6djgpardecr.ukwest-01.azurewebsites.net/api/v1/user/register', input, {
+            const res = await axios.post('http://pr-gwhve7cwb3fwdmcu.canadacentral-01.azurewebsites.net/api/v1/user/register', input, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
